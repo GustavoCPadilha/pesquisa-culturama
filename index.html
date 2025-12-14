@@ -42,6 +42,7 @@
             <fieldset>
                 <legend>Perfil</legend>
 
+                <!-- Escolha única -->
                 <p>Gênero:</p>
                 <input type="radio" name="userGender" id="fem" value="feminino">
                 <label for="fem">Feminino</label>
@@ -53,6 +54,7 @@
                 <label for="notInformed">Prefiro não informar</label>
                 <br>
 
+                <!-- Lista suspensa -->
                 <label for="maritalStatus">Estado Civil</label>
                 <select name="userMaritalStatus" id="maritalStatus">
                     <option value="notInformed">Selecione...</option>
@@ -98,6 +100,7 @@
             </fieldset>
             <fieldset>
                 <legend>Hábitos</legend>
+                <!-- Múltipla escolha -->
                 <p>Redes Sociais:</p>
                 <input type="checkbox" name="social" id="instagram" value="instagram">
                 <label for="instagram">Instagram</label>
@@ -114,6 +117,16 @@
                 <input type="checkbox" name="social" id="X" value="X">
                 <label for="X">X</label>
                 <br>
+
+                <!-- Sugestões pré-definidas mas aceitando texto livre -->
+                <label for="musicStyle">Estilo musical:</label>
+                <input list="styleTypes" type="text" name="userMusicStyle" id="musicStyle">
+                <datalist id="styleTypes">
+                    <option value="rock">
+                    <option value="pop">
+                    <option value="samba">
+                    <option value="sertanejo">
+                </datalist>
 
             </fieldset>
             <button type="submit">Enviar</button>
